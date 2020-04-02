@@ -1,37 +1,39 @@
 <?php
 
-class A {
+//trida abstraktni ustredny a v ni protected $napetí
 
-publicfunction_construct
- ($ustrednyPrefix.php) {
+abstract class  ustredny_Matyas_Bej{
+
+    protected $napeti_Matyas_Bej;
+ 
+    //dosazeni napeti
+    public function setNapeti_Matyas_Bej($napeti_Matyas_Bej){
+        $this->napeti_Matyas_Bej = $napeti_Matyas_Bej;
+    }
+    //zhodnoti napeti
+    public function getNapeti_Matyas_Bej() {
+        return $this-> napeti_Matyas_Bej;
+    }
+}
+// trida ustredna se dedi do abstraktni tridy ustredny. extends = dedi
+class  ustredna_Matyas_Bej extends ustredny_Matyas_Bej{
+   public $Napeti_Matyas_Bej= 8;
+ 
+   //nastavi konstanty type
+   const TYPE ="5";
+}
+//trida iustredna dedi interface od abstraktni tridy ustredny
+interface iustredna_Matyas_Bej extends ustredny_Matyas_Bej{
+    //vypis dane nastavene hodnoty
+    public function _contruct ($Napeti_Matyas_Bej);
+ 
 }
 
-}
-class B {
+//pres vardummp vypise hodnotu v type a hodnotu ustrednoveho napeti
+ var_dump (ustredna_Matyas_Bej::TYPE);
+ var_dump ($Napeti_Matyas_Bej);
 
-publicfunction _construct
- ($ustrednaPrefix.php) {
-}
 
-}
-
-class ustrednaPrefix extends ustrednyPrefix {}
-
-$napeti['ustrednaprefix'];
-ustrednaPrefix['setNapetiPrefix']="cislo";
-
-include
-('ustrednyPrefix.php');
-
-class ustrednyPrefix 
-{Bej};
-
-$napetiPrefix['firstname']=
-Matyas;
-
-$this=>$napeti = ustrednaPrefix;
-
-var_dump(ustrednaPrefix);
 ?>
 
 //////////////////////////////////////////////////////////////////////////////////
