@@ -125,3 +125,13 @@ class SringMatyBejvl extends StringsMatyBejvl{
 echo 'StringsMatyBejvl';
 var_dump(StringMatyBejvl::substrMatyBejvl(points));
 ?>
+<?php
+use Tracy\Debugger;
+
+Debugger::enable();
+
+
+
+
+
+?>
