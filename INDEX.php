@@ -126,10 +126,7 @@ echo 'StringsMatyBejvl';
 var_dump(StringMatyBejvl::substrMatyBejvl(points));
 ?>
 <?php
-use Tracy\Debugger;
-
-Debugger::enable();
-
+C:\Users\matya\OneDrive\Dokumenty\school\ProgramováníPS\MatyasBejvl/autoload.php
 
 
 
