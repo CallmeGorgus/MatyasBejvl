@@ -97,4 +97,97 @@ echo numbersBejvlMatyas:: floor(15, 18);
 echo "<br>";
 echo numbersBejvlMatyas::fmod(2, 15);
 echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+class StringsMatyasBejvl {
+
+    /**
+     * 
+     * @param string $haystack
+     * @param string $needle
+     * @param int $offset
+     * @return string
+     */
+    public static function strpos(string $haystack, string $needle, int $offset = 0): string {
+        return strpos($haystack, $needle, $offset);
+    }
+
+    public static function trim(string $str, string $charlist): string {
+        return trim($str, $charlist);
+    }
+
+    public static function substr(string $string, int $start, int $length = 0): string {
+        return substr($string, $start, $length);
+    }
+
+    public static function substr_replace(string $string, string $replacement, int $start, int $length = 0): string {
+        return substr_replace($string, $replacement, $start, $length);
+    }
+
+    public static function strtr(string $str, array $replace_pairs): string {
+        return strtr($str, $replace_pairs);
+    }
+
+    public static function strtoupper(string $string): string {
+        return strtoupper($string);
+    }
+
+    public static function strtolower(string $str): string {
+        return strtolower($str);
+    }
+
+    public static function strripos(string $haystack, string $needle, int $offset = 0): int {
+        return strripos($haystack, $needle, $offset);
+    }
+
+    public static function strrpos(string $haystack, string $needle, int $offser = 0): int {
+        return strrpos($haystack, $needle, $offser);
+    }
+
+    public static function str_replace(mixed $search, mixed $replace, mixed $subject, int $count): mixed {
+        return str_replace($search, $replace, $subject, $count);
+    }
+
+    public static function implode(string $glue, array $pieces): string {
+        return implode($glue, $pieces);
+    }
+
+    public static function explode(string $delimiter, string $string, int $limit = 0): array {
+        return explode($delimiter, $string, $limit);
+    }
+    
+    public static function addcslashes ( string $str , string $charlist ) : string {
+        return addcslashes($str, $charlist);
+    }
+    
+    public static function addslashes ( string $str ) : string {
+        return addslashes($str);
+    }
+    
+    public static function ucfirst ( string $str ) : string {
+        return ucfirst($str);
+    }
+    
+    public static function ucwords( string $str,string $delimiters) : string {
+        return ucwords($str, $delimiters);
+    }
+        
+
+}
+
+echo(StringsMatyasBejvl::substr('ahoj', 2, -1));
+echo "<br>";
+echo trim(' Ahoj, jak se máš? ');
+echo "<br>";
+
+echo "<br>";
+
+echo "<br>";
+
+echo "<br>";
+
+echo "<br>";
+
  
