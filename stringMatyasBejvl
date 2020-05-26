@@ -10,11 +10,46 @@ class StringsMatyasBejvl {
     public static function strpos(string $haystack, string $needle, int $offset = 0): string {
         return strpos($haystack, $needle, $offset);
     }
-    
+
     public static function trim(string $str, string $charlist): string {
         return trim($str, $charlist);
     }
 
+    public static function substr(string $string, int $start, int $length = 0): string {
+        return substr($string, $start, $length);
+    }
+
+    public static function substr_replace(string $string, string $replacement, int $start, int $length = 0): string {
+        return substr_replace($string, $replacement, $start, $length);
+    }
+
+    public static function strtr(string $str, array $replace_pairs): string {
+        return strtr($str, $replace_pairs);
+    }
+    
+    public static function strtoupper(string $string): string {
+        return strtoupper($string);
+    }
+    
+     public static function strtolower(string $str): string {
+         return strtolower($str);
+     }
+     
+     
+    
+    
+
 }
 
-echo trim(' Ahoj, jak se máš? '
+echo(StringsMatyasBejvl::substr('ahoj', 2, -1));
+echo "<br>";
+echo trim(' Ahoj, jak se máš? ');
+echo "<br>";
+
+echo "<br>";
+
+echo "<br>";
+
+echo "<br>";
+
+echo "<br>";
