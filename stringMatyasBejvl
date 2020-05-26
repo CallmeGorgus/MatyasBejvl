@@ -1,0 +1,20 @@
+class StringsMatyasBejvl {
+
+    /**
+     * 
+     * @param string $haystack
+     * @param string $needle
+     * @param int $offset
+     * @return string
+     */
+    public static function strpos(string $haystack, string $needle, int $offset = 0): string {
+        return strpos($haystack, $needle, $offset);
+    }
+    
+    public static function trim(string $str, string $charlist): string {
+        return trim($str, $charlist);
+    }
+
+}
+
+echo trim(' Ahoj, jak se máš? '
