@@ -1,0 +1,96 @@
+<?php
+//Štěpán Boukal ZT3
+}
+// trida ustredna se dedi do abstraktni tridy ustredny
+class  ustredna_Boukal extends ustredny_Boukal
+{
+	  public $Napeti_Bejvl = 3;
+	  //nastavi konstanty type
+	  const TYPE = "3";
+}
+//trida ustredna dedi interface od abstraktni tridy ustredny
+	interface ustredna_Boukal extends ustredny_Bejvl
+	{
+	    //vypise nastavene hodnoty
+	    public function _contruct ($Napeti_Bejvl);
+}
+//trida ktera je abstraktni ustredny a v ni protected $napetí
+	abstract class  ustredny_Bejvl
+	{
+	
+	    protected $napeti_Bejvl;
+//nastavi napeti
+	    public function setNapeti_Boukal($napeti_Bejvl)
+	    {
+	        $this->napeti_Bejvl = $napeti_Bejvl;
+	    }
+//precte napeti
+	    public function getNapeti_Bejvl() 
+	    {
+	        return $this-> napeti_Bejvl;
+	    }
+
+//pres vardummp nakonec vypiseme hodnotu ustrednoveho napeti a hodnotu type
+	 var_dump (ustredna_Bejvl::TYPE);
+	 var_dump ($Napeti_Bejvl);
+	
+
+////////////////////////////////////////////////////////////////////////////////////
+
+public function translate($text){
+
+     $translate_text = $this->ts->translate($text);
+
+     return $translate_text;
+}
+
+public function translate(string $text){
+ 
+     $translate_text = $this->ts->translate($text);
+
+     return $translate_text;
+}
+
+declare(strict_types=1);
+
+declare(strict_types=1);
+class A {
+}
+
+
+public function translate(string $text) : string {
+ 
+     $translate_text = $this->ts->translate($text);
+
+     return $translate_text;
+}
+
+/**
+ * @param string $text
+ * @return string
+ */
+public function translate(string $text) : string {
+ 
+     $translate_text = $this->ts->translate($text);
+
+     return $translate_text;
+}
+
+/** Vrati prelozeny text
+ * @author Matyas Bejvl
+ * @param string $text
+ * @return string
+ */
+public function translate(string $text) : string {
+ 
+     // preklada text
+     $translate_text = $this->ts->translate($text);
+ 
+    /**
+     * nebo viceradkovy
+     * kometar
+     */
+     return $translate_text;
+}
+
+?>
