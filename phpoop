@@ -1,15 +1,15 @@
 <?php
-//Štěpán Boukal ZT3
+//Matyas Bejvl ZT3
 }
 // trida ustredna se dedi do abstraktni tridy ustredny
-class  ustredna_Boukal extends ustredny_Boukal
+class  ustredna_Bejvl extends ustredny_Bejvl
 {
 	  public $Napeti_Bejvl = 3;
 	  //nastavi konstanty type
 	  const TYPE = "3";
 }
 //trida ustredna dedi interface od abstraktni tridy ustredny
-	interface ustredna_Boukal extends ustredny_Bejvl
+	interface ustredna_Bejvl extends ustredny_Bejvl
 	{
 	    //vypise nastavene hodnoty
 	    public function _contruct ($Napeti_Bejvl);
@@ -20,7 +20,7 @@ class  ustredna_Boukal extends ustredny_Boukal
 	
 	    protected $napeti_Bejvl;
 //nastavi napeti
-	    public function setNapeti_Boukal($napeti_Bejvl)
+	    public function setNapeti_Bejvl($napeti_Bejvl)
 	    {
 	        $this->napeti_Bejvl = $napeti_Bejvl;
 	    }
