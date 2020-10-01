@@ -1,15 +1,25 @@
 <?php
 
-namespace Bejvl;
-
 declare (strict_types = 1);
+
+namespace Bejvl;
 
 final class UserBejvl {
 
-    public function translate(string $text): string {
-        $translate_text = $this->ts->translate($text);
+    /** Vrátí zvuk
+     * @author Matyas Bejvl
+     * @param string $zvuk
+     * @return string
+     */
+    public function reproduktor(string $zvuk): string {
 
-        return $translate_text;
+        $reproduktor_zvuk = $this->ts->reproduktor($zvuk);
+
+        /**
+         * komentar
+         * nebo viceradkovy
+         */
+        return $reproduktor_zvuk;
     }
 
     private $username = 'Matyas';
@@ -65,6 +75,6 @@ echo $maty->getZipBejvl();
 echo $maty->getInvoiceIdBejvl();
 echo $maty->getLoginCountBejvl();
 echo $maty->getBornDateBejvl();
-echo $translate_text->getText();
+
 
 echo var_dump($maty);
