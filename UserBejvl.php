@@ -2,31 +2,31 @@
 
 namespace Bejvl;
 
-final class UserBejvl
-{
-    private $username = 'Matyas';
-    
-    private $password = '1234';
-    
-    protected $firstName = 'Matyáš';
-    
-    protected $lastName = 'Bejvl';
-    
-    protected $phone = 123456789;
-    
-    public $street = 'Plukovníka Mráze 17';
-    
-    public $zip = 27301; // psc
-    
-    public $invoiceId = 0123574112; // ico
-    
-    public $loginCount = 0;
-    
-    public $bornDate = 2001;
-    
-    public function __construct() {
+declare (strict_types = 1);
+
+final class UserBejvl {
+
+    public function translate(string $text): string {
+        $translate_text = $this->ts->translate($text);
+
+        return $translate_text;
     }
-    
+
+    private $username = 'Matyas';
+    private $password = '1234';
+    protected $firstName = 'Matyáš';
+    protected $lastName = 'Bejvl';
+    protected $phone = 123456789;
+    public $street = 'Plukovníka Mráze 17';
+    public $zip = 27301; // psc
+    public $invoiceId = 0123574112; // ico
+    public $loginCount = 0;
+    public $bornDate = 2001;
+
+    public function __construct() {
+        
+    }
+
     function setUsernameBejvl(string $username) {
         $this->username = $username;
     }
@@ -53,7 +53,8 @@ final class UserBejvl
 
     function getBornDateBejvl(): int {
         return $this->bornDate;
-    }    
+    }
+
 }
 
 $maty = new UserBejvl;
@@ -64,5 +65,6 @@ echo $maty->getZipBejvl();
 echo $maty->getInvoiceIdBejvl();
 echo $maty->getLoginCountBejvl();
 echo $maty->getBornDateBejvl();
+echo $translate_text->getText();
 
 echo var_dump($maty);
